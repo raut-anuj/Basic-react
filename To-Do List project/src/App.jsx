@@ -56,7 +56,9 @@ const deleteTask = (idx) => {
         return (
           <div key={idx}>
             {idx}{e.title} {e.detail}
-            <button onClick={()=>{deleteTask(idx)}}>Delete this list</button>
+            <button onClick={()=>{
+              deleteTask(idx)}}>
+                Delete this list</button>
           </div>
         )
       })}
